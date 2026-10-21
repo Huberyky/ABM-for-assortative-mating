@@ -4,7 +4,6 @@ This repository contains a Python Mesa replication of the agent-based marriage-m
 
 > Grow, A., & Van Bavel, J. (2015). Assortative Mating and the Reversal of Gender Inequality in Education in Europe: An Agent-Based Model. *PLOS ONE, 10*(6), e0127806. https://doi.org/10.1371/journal.pone.0127806
 
-本仓库只发布复现模型的程序代码，不包含原始调查数据、论文作者的数据文件、个人整理数据、模拟输出或本地研究文档。
 
 ## What is reproduced
 
