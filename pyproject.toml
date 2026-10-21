@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grow-vanbavel-mesa"
+version = "1.0.0"
+description = "Mesa replication of Grow and Van Bavel's 2015 assortative mating ABM"
+requires-python = ">=3.10"
+dependencies = [
+  "mesa>=3.5.1,<4",
+  "networkx>=3.2",
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "openpyxl>=3.1",
+  "scipy>=1.10",
+  "statsmodels>=0.14",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.4"]
+visualization = ["mesa[viz]>=3.5.1,<4"]
+
+[project.scripts]
+marriage-mesa = "marriage_mesa.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
